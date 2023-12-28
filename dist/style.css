@@ -548,6 +548,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -558,6 +562,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .mt-60 {
   margin-top: 15rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -624,13 +632,63 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   justify-content: center;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-blue-500 {
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-cyan-400 {
+  --tw-gradient-from: #22d3ee var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 211 238 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-purple-500 {
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-blue-400 {
+  --tw-gradient-to: #60a5fa var(--tw-gradient-to-position);
+}
+
+.to-purple-500 {
+  --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+}
+
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-4xl {
@@ -643,17 +701,72 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .italic {
   font-style: italic;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.text-cyan-400 {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -684,20 +797,52 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-delay: 2800ms;
 }
 
-.delay-\[600ms\] {
-  transition-delay: 600ms;
+.delay-\[3200ms\] {
+  transition-delay: 3200ms;
 }
 
-.delay-\[800ms\] {
-  transition-delay: 800ms;
+.delay-\[3600ms\] {
+  transition-delay: 3600ms;
+}
+
+.delay-\[4000ms\] {
+  transition-delay: 4000ms;
+}
+
+.delay-\[4600ms\] {
+  transition-delay: 4600ms;
+}
+
+.delay-\[5000ms\] {
+  transition-delay: 5000ms;
+}
+
+.delay-\[5200ms\] {
+  transition-delay: 5200ms;
+}
+
+.delay-\[5600ms\] {
+  transition-delay: 5600ms;
+}
+
+.delay-\[6000ms\] {
+  transition-delay: 6000ms;
+}
+
+.delay-\[6400ms\] {
+  transition-delay: 6400ms;
+}
+
+.delay-\[6800ms\] {
+  transition-delay: 6800ms;
+}
+
+.delay-\[00ms\] {
+  transition-delay: 00ms;
 }
 
 .\!duration-\[0ms\] {
   transition-duration: 0ms !important;
-}
-
-.duration-\[1200ms\] {
-  transition-duration: 1200ms;
 }
 
 .duration-\[1600ms\] {
@@ -716,12 +861,76 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 2800ms;
 }
 
-.duration-\[3000ms\] {
-  transition-duration: 3000ms;
+.duration-\[3200ms\] {
+  transition-duration: 3200ms;
+}
+
+.duration-\[3600ms\] {
+  transition-duration: 3600ms;
+}
+
+.duration-\[4000ms\] {
+  transition-duration: 4000ms;
+}
+
+.duration-\[4200ms\] {
+  transition-duration: 4200ms;
+}
+
+.duration-\[5000ms\] {
+  transition-duration: 5000ms;
+}
+
+.duration-\[5200ms\] {
+  transition-duration: 5200ms;
+}
+
+.duration-\[5600ms\] {
+  transition-duration: 5600ms;
+}
+
+.duration-\[6000ms\] {
+  transition-duration: 6000ms;
+}
+
+.duration-\[6400ms\] {
+  transition-duration: 6400ms;
+}
+
+.duration-\[6800ms\] {
+  transition-duration: 6800ms;
+}
+
+.duration-\[7200ms\] {
+  transition-duration: 7200ms;
+}
+
+.duration-\[000ms\] {
+  transition-duration: 000ms;
+}
+
+.duration-\[20000ms\] {
+  transition-duration: 20000ms;
+}
+
+.animate-delay-\[1600ms\] {
+  animation-delay: 1600ms;
+}
+
+.animate-duration-\[1200ms\] {
+  animation-duration: 1200ms;
+}
+
+.animate-infinite {
+  animation-iteration-count: infinite;
 }
 
 .animate-once {
   animation-iteration-count: 1;
+}
+
+.animate-ease-linear {
+  animation-timing-function: linear;
 }
 
 .animate-ease-in {
