@@ -548,6 +548,40 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -555,6 +589,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-20 {
@@ -597,8 +635,24 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 15rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.mr-32 {
+  margin-right: 8rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .block {
@@ -972,6 +1026,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .duration-\[2800ms\] {
   transition-duration: 2800ms;
+}
+
+.duration-\[3000ms\] {
+  transition-duration: 3000ms;
 }
 
 .duration-\[3200ms\] {
