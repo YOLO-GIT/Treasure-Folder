@@ -169,3 +169,67 @@ body::-webkit-scrollbar {
 .fancy:hover>.outer:nth-child(10) {
     transform: translate(0%, 0%);
 }
+
+/* When Hover 1 */
+
+/* Add this to your custom_style.css */
+
+/* Container for images */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling for the image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.image-container:hover img {
+    opacity: 0;
+}
+
+/* Text overlay (adjust styling as needed) */
+.image-container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+/* When Hover 2 */
+ #container {
+     position: relative;
+     width: 300px;
+     height: 300px;
+     background-color: lightgray;
+ }
+
+ #image {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     transition: opacity 0.5s;
+ }
+
+ #container:hover #image {
+     opacity: 1;
+ }
