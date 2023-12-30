@@ -548,40 +548,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .relative {
   position: relative;
 }
@@ -591,16 +557,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-right: auto;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .mb-60 {
@@ -633,26 +599,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .mt-60 {
   margin-top: 15rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
-}
-
-.mr-32 {
-  margin-right: 8rem;
-}
-
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.ml-52 {
-  margin-left: 13rem;
 }
 
 .block {
@@ -984,20 +930,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-delay: 4400ms;
 }
 
-.delay-\[4600ms\] {
-  transition-delay: 4600ms;
-}
-
-.delay-\[4800ms\] {
-  transition-delay: 4800ms;
-}
-
-.delay-\[5000ms\] {
-  transition-delay: 5000ms;
-}
-
-.delay-\[6000ms\] {
-  transition-delay: 6000ms;
+.delay-\[800ms\] {
+  transition-delay: 800ms;
 }
 
 .\!duration-\[0ms\] {
@@ -1006,6 +940,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-\[1200ms\] {
+  transition-duration: 1200ms;
 }
 
 .duration-\[1600ms\] {
@@ -1044,24 +982,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-duration: 4000ms;
 }
 
-.duration-\[4200ms\] {
-  transition-duration: 4200ms;
+.duration-\[4400ms\] {
+  transition-duration: 4400ms;
 }
 
 .duration-\[4800ms\] {
   transition-duration: 4800ms;
-}
-
-.duration-\[5000ms\] {
-  transition-duration: 5000ms;
-}
-
-.duration-\[5200ms\] {
-  transition-duration: 5200ms;
-}
-
-.duration-\[6400ms\] {
-  transition-duration: 6400ms;
 }
 
 .ease-in-out {
