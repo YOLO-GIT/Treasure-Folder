@@ -35,18 +35,18 @@ const enhance = id => {
 
 enhance("channel-link");
 
-// Function to play the audio
-async function playAudio() {
-    var audio = document.getElementById("myAudio");
+// // Function to play the audio
+// async function playAudio() {
+//     var audio = document.getElementById("myAudio");
 
-    try {
-        // Attempt to play the audio
-        await audio.play();
-    } catch (error) {
-        // Autoplay was prevented, handle it here (e.g., show a play button)
-        console.error("Autoplay prevented:", error.message);
-    }
-}
+//     try {
+//         // Attempt to play the audio
+//         await audio.play();
+//     } catch (error) {
+//         // Autoplay was prevented, handle it here (e.g., show a play button)
+//         console.error("Autoplay prevented:", error.message);
+//     }
+// }
 
-// Call playAudio() on page load
-playAudio();
+// // Call playAudio() on page load
+// playAudio();
