@@ -50,23 +50,3 @@ async function playAudio() {
 
 // Call playAudio() on page load
 playAudio();
-
-var audio = document.getElementById("myAudio");
-
-// Listen for scroll events
-window.addEventListener("scroll", function () {
-    // Get the current scroll position
-    var scrollPosition = window.scrollY;
-
-    // Get the position of the footer
-    var footerPosition = document.querySelector("footer").offsetTop;
-
-    // Adjust this value based on when you want the audio to stop
-    var offset = 200;
-
-    // Check if the scroll position is near the footer
-    if (scrollPosition > footerPosition - offset) {
-        // Pause the audio when it reaches the footer
-        audio.pause();
-    }
-});
