@@ -52,25 +52,25 @@
         </div>
     </div>
 
-    <audio controls id="myAudio">
+    <video id="myVideo" autoplay muted loop style="display:none;">
         <source src="assets/finale.mp3" type="audio/mpeg">
-    </audio>
+    </video>
     <script>
-        // Function to play the audio
-        async function playAudio() {
-            var audio = document.getElementById("myAudio");
+        // Function to play the video (and audio)
+        async function playVideo() {
+            var video = document.getElementById("myVideo");
 
             try {
-                // Attempt to play the audio
-                await audio.play();
+                // Attempt to play the video (and audio)
+                await video.play();
             } catch (error) {
                 // Autoplay was prevented, handle it here (e.g., show a play button)
                 console.error("Autoplay prevented:", error.message);
             }
         }
 
-        // Call playAudio() on page load
-        playAudio();
+        // Call playVideo() on page load
+        playVideo();
     </script>
     <!-- BOAT -->
     <div class="delay-[1600ms] duration-[2000ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
