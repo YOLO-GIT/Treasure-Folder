@@ -35,22 +35,32 @@ const enhance = id => {
 
 enhance("channel-link");
 
- var audio = document.getElementById("myAudio");
+// Function to play the audio
+function playAudio() {
+    var audio = document.getElementById("myAudio");
 
-    // Listen for scroll events
-    window.addEventListener("scroll", function() {
-        // Get the current scroll position
-        var scrollPosition = window.scrollY;
+    // Check if the audio is paused or has ended before playing
+    if (audio.paused || audio.ended) {
+        audio.play();
+    }
+}
 
-        // Get the position of the footer
-        var footerPosition = document.querySelector("footer").offsetTop;
+var audio = document.getElementById("myAudio");
 
-        // Adjust this value based on when you want the audio to stop
-        var offset = 200;
+// Listen for scroll events
+window.addEventListener("scroll", function () {
+    // Get the current scroll position
+    var scrollPosition = window.scrollY;
 
-        // Check if the scroll position is near the footer
-        if (scrollPosition > footerPosition - offset) {
-            // Pause the audio when it reaches the footer
-            audio.pause();
-        }
-    });
+    // Get the position of the footer
+    var footerPosition = document.querySelector("footer").offsetTop;
+
+    // Adjust this value based on when you want the audio to stop
+    var offset = 200;
+
+    // Check if the scroll position is near the footer
+    if (scrollPosition > footerPosition - offset) {
+        // Pause the audio when it reaches the footer
+        audio.pause();
+    }
+});
