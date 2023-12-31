@@ -56,24 +56,6 @@
         <source src="assets/finale.mp3" type="audio/mpeg">
     </audio>
 
-    <script>
-        // Function to play the video (and audio)
-        async function playVideo() {
-            var video = document.getElementById("myVideo");
-
-            try {
-                // Attempt to play the video (and audio)
-                await video.play();
-            } catch (error) {
-                // Autoplay was prevented, handle it here (e.g., show a play button)
-                console.error("Autoplay prevented:", error.message);
-            }
-        }
-
-        // Call playVideo() on page load
-        playVideo();
-    </script>
-
     <!-- BOAT -->
     <div class="delay-[1600ms] duration-[2000ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="400">
         <div class="flex justify-center items-center mb-20 animate-bounce animate-infinite animate-ease-in">
